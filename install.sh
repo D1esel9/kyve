@@ -71,14 +71,14 @@ docker run -d -it --restart=always \
 --name kyve-avalanche kyve/evm:latest \
 --pool 0x464200b29738367366FDb4c45f3b8fb582AE0Bf8 \
 --private-key `cat $HOME/metamask.txt` \
---stake 150 \
+--stake 100 \
 -e https://rpc.testnet.moonbeam.network &>/dev/null
 
 docker run -d -it --restart=always \
 --name kyve-moonriver kyve/evm:latest \
 --pool 0x610D55fA573Bce4D2d36e8ADAAee517B785a69dF \
 --private-key `cat $HOME/metamask.txt` \
---stake 150 \
+--stake 100 \
 -e https://rpc.testnet.moonbeam.network &>/dev/null
 
 docker run -d -it --restart=always \
@@ -92,14 +92,14 @@ docker run -d -it --restart=always \
 --name kyve-solana kyve/solana-snapshots:latest \
 --pool 0x3124375cA4de5FE5afD672EF2775c6bdcA1Cfdcc \
 --private-key `cat $HOME/metamask.txt` \
---stake 150 \
+--stake 100 \
 -e https://rpc.testnet.moonbeam.network &>/dev/null
 
 docker run -d -it --restart=always \
 --name kyve-celo kyve/celo:latest \
 --pool 0x1588fd93715Aa08d67c32C6dF96fC730B15E1E1A \
 --private-key `cat $HOME/metamask.txt` \
---stake 150 \
+--stake 100 \
 -e https://rpc.testnet.moonbeam.network &>/dev/null
 
 echo "Нода запущена, переходим к следующему пункту гайда"
