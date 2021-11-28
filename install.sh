@@ -85,7 +85,7 @@ docker run -d -it --restart=always \
 --name kyve-cosmos kyve/cosmos:latest \
 --pool 0x7Bb18C81BBA6B8dE8C17B97d78B65327024F681f \
 --private-key `cat $HOME/metamask.txt` \
---stake 150 \
+--stake 100 \
 -e https://rpc.testnet.moonbeam.network &>/dev/null
 
 docker run -d -it --restart=always \
